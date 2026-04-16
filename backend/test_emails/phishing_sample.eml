@@ -1,0 +1,38 @@
+MIME-Version: 1.0
+From: "PayPal Security" <security@paypa1-secure.tk>
+To: victim@example.com
+Reply-To: hacker@malicious-domain.xyz
+Subject: URGENT: Your PayPal Account Has Been Compromised!
+Date: Mon, 14 Apr 2025 10:30:00 +0000
+Message-ID: <fake-message-id-12345>
+X-Mailer: PHPMailer 6.0
+X-Priority: 1
+Content-Type: text/plain; charset="utf-8"
+Authentication-Results: mx.example.com; spf=fail; dkim=fail; dmarc=fail
+Return-Path: <bounces@bulk-mailer.ga>
+Received: from unknown (HELO bulk-mailer.ga) (192.168.1.100) by mx.example.com with SMTP; Mon, 14 Apr 2025 10:29:55 +0000
+Received: from localhost (unknown [10.0.0.1]) by bulk-mailer.ga (Postfix) with ESMTP id ABC123; Mon, 14 Apr 2025 10:29:50 +0000
+
+Dear Valued Customer,
+
+URGENT SECURITY ALERT!
+
+We have detected unauthorized access to your PayPal account. Your account has been temporarily limited due to suspicious activity.
+
+You MUST verify your identity within 24 hours or your account will be permanently suspended.
+
+Click here to verify your account immediately:
+http://192.168.1.1/paypal-verify/login.php?ref=secure
+
+You will need to provide:
+- Your email and password
+- Your credit card information
+- Your Social Security Number
+
+Failure to respond will result in permanent account termination and potential legal action.
+
+Act now! Don't delay!
+
+Sincerely,
+PayPal Security Team
+http://paypa1-secure.tk/support

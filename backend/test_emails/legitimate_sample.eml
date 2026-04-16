@@ -1,0 +1,27 @@
+MIME-Version: 1.0
+From: "Alice Johnson" <alice.johnson@company.com>
+To: bob.smith@company.com
+Subject: Re: Q4 Project Timeline Update
+Date: Mon, 14 Apr 2025 14:15:00 +0000
+Message-ID: <msg-20250414-141500@company.com>
+Content-Type: text/plain; charset="utf-8"
+Authentication-Results: mx.company.com; spf=pass; dkim=pass; dmarc=pass
+Return-Path: <alice.johnson@company.com>
+Received: from mail.company.com (mail.company.com [203.0.113.10]) by mx.company.com with ESMTPS id DEF456; Mon, 14 Apr 2025 14:14:58 +0000
+
+Hi Bob,
+
+Thanks for sending over the updated project timeline. I've reviewed the milestones and everything looks good for the Q4 deliverables.
+
+A few notes:
+
+1. The design review is scheduled for next Wednesday at 2:00 PM in Conference Room B.
+2. I've attached the revised budget spreadsheet with the updated figures from finance.
+3. Can you confirm the resource allocation for the testing phase?
+
+Let me know if you need anything else before the stakeholder presentation on Friday.
+
+Best regards,
+Alice Johnson
+Senior Project Manager
+Company Inc.

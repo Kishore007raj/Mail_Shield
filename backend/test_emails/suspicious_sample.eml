@@ -1,0 +1,29 @@
+MIME-Version: 1.0
+From: "Microsoft Support" <support@outlook.com>
+To: user@example.com
+Reply-To: msft-verify@suspicious-domain.ml
+Subject: Action Required: Unusual Sign-In Activity on Your Microsoft Account
+Date: Mon, 14 Apr 2025 08:00:00 +0000
+Message-ID: <poorly-formed-id>
+X-Mailer: SwiftMailer 5.4
+Content-Type: text/plain; charset="utf-8"
+Authentication-Results: mx.example.com; spf=softfail; dkim=none
+Return-Path: <noreply@mass-mailer.click>
+Received: from mass-mailer.click (unknown [45.33.21.100]) by mx.example.com with SMTP; Mon, 14 Apr 2025 07:59:55 +0000
+
+Dear Microsoft User,
+
+We noticed unusual sign-in activity on your Microsoft account from the following location:
+
+Location: Moscow, Russia
+Device: Unknown
+Time: April 14, 2025 3:00 AM
+
+If this wasn't you, your account may be compromised. Click the link below to secure your account:
+
+https://micros0ft-account.verify-login.xyz/secure?id=usr_29384
+
+If you don't take action within 48 hours, we may need to temporarily suspend your account to protect your data.
+
+Thank you,
+Microsoft Account Security Team

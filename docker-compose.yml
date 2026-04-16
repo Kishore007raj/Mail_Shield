@@ -1,0 +1,53 @@
+version: "3.8"
+
+services:
+  postgres:
+    image: postgres:15-alpine
+    container_name: phishaegis-db
+    environment:
+      POSTGRES_USER: phishaegis
+      POSTGRES_PASSWORD: phishaegis
+      POSTGRES_DB: phishaegis
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U phishaegis"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+    networks:
+      - phishaegis-net
+
+  backend:
+    build: ./backend
+    container_name: phishaegis-backend
+    ports:
+      - "8000:8000"
+    environment:
+      DATABASE_URL: postgresql://phishaegis:phishaegis@postgres:5432/phishaegis
+    depends_on:
+      postgres:
+        condition: service_healthy
+    restart: on-failure
+    networks:
+      - phishaegis-net
+
+  frontend:
+    build: ./frontend
+    container_name: phishaegis-frontend
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+    restart: on-failure
+    networks:
+      - phishaegis-net
+
+volumes:
+  pgdata:
+
+networks:
+  phishaegis-net:
+    driver: bridge
